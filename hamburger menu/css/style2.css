@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(copper.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.44);
+}
+
+.content {
+
+    position: relative;
+    z-index: 1;
+
+}
+
+h1 {
+    margin-top: 80px;
+   
+}
+
+h2 {
+    color: rgb(204, 58, 1);
+    margin-top: -55px;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Wallpoet', cursive;
+    font-weight: 100;
+    animation: drop 2.5s ease;
+    
+}
+
+.sen {
+    width: 800px;
+    height: 1.5px;
+    background-color: #8d3711;
+    margin-bottom: -15px;
+    margin-top: 15px;
+}
+
+.content p {
+    color: rgba(162, 81, 50, 0.76);
+    font-size: 1.2rem;
+    font-weight:100;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 800px;
+
+   
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: #b13201;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(177, 50, 1, 0.76), 0 0 20px rgba(177, 50, 1, 0.76), 0 0 60px rgba(177, 50, 1, 0.76);
+    margin: 100px;
+}
+
+
+.toggler {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.hamburger > div {
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgba(177, 50, 1, 0.76);
+    transition: .4s;
+}
+
+.hamburger > div:before,
+.hamburger > div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgba(177, 50, 1, 0.76);
+    transition: .4s;
+}
+
+.hamburger > div:before {
+    top: -10px;
+}
+
+.hamburger > div:after {
+    top: 10px;
+}
+
+.toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+
+.toggler:checked + .hamburger > div:after,
+.toggler:checked + .hamburger > div:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.toggler:checked ~ .menu > div {
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div {
+    opacity: 1;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    transition: .6s;
+}
+
+.menu > div {
+    width: 1600px;
+    height: 1600px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150%) translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > div > div {
+    max-width: 90vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.menu > div > div > ul > li {
+    list-style: none;
+}
+
+.menu > div > div > ul > li > a {
+ 
+   
+    display: inline-block;
+    font-size: 30px;
+    color: rgba(255, 71, 0, 0.76);
+    
+   
+    font-weight:100;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.menu > div > div > ul > li > a:hover {
+    color: #f5c8ac;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.68);
+}

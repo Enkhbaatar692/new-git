@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Access</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navs">
+                <li><a class="logo" href="index.html"><img src="img/vainaa22.gif" width="100px"></a></li>
+                <li class="navigations"><a href="about.html">About</a></li>
+                <li class="navigations"><a href="works.html">Works</a></li>
+                <li class="navigations"><a href="shop.html">Shop</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1><a href="index.html"><img src="img/vainaa22.gif" width="400px;"></a></h1>
+
+        <div class="wrapper">
+            <div class="contact-form">
+                <div class="input-fields">
+                    <form action="sendmail.php" method="post">
+                    <input type="text" class="input" placeholder="Name" name="name">
+                    <input type="text" class="input" placeholder="Email Address" name="address">
+                    <input type="text" class="input" placeholder="Phone" name="phone">
+                    <input type="text" class="input" placeholder="Subject" name="subject">
+                    <input type="submit" name="submit" value="send" />
+                        </form>
+                </div>
+                <div class="msg">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="btn">send</div>
+                </div>
+            </div>
+        </div>
+        <div >
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.590299026757!2d139.65502325063753!3d35.85904842770973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ea8396caa7d7%3A0x1bf7c194ee0614d!2z5rWm5ZKM6aeF!5e0!3m2!1sja!2sjp!4v1591161325719!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="footer-sen"></div>
+    </main>
+
+    <footer>
+        <img src="img/vainaa22.gif" width="300px">
+        <ul class="foott">
+            <li class="title">Access</li>
+            <li class="items">Uiru saido 103</li>
+
+            <li class="items">Saitamashi midoriku </li>
+            <li class="items">Saitama ken</li>
+            <li class="items">in Japan</li>
+        </ul>
+
+        <ul class="right">
+            <li class="title">Services</li>
+            <li class="items">Car-color</li>
+            <li class="items">Selbeg</li>
+            <li class="items">Evdrel gemtel</li>
+            <li class="items">Car-request</li>
+        </ul>
+
+
+    </footer>
+    <div class="downside">
+
+        <a href=""><i class="fab fa-facebook-square"></i>
+        </a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-line"></i></a>
+        <a href=""><i class="far fa-envelope"></i></a>
+        <a href=""><i class="fab fa-skype"></i></a>
+    </div>
+
+    <div class="footer-third"></div>
+    <div class="footer-secondsen">
+        <p>All Right Reserved 2020</p>
+    </div>
+
+</body>
+<style>
+    html {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        background-image: url(css/access%20image.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%%;
+    }
+
+
+    main {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .navs {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        height: 80px;
+    }
+
+    .navs a {
+        flex: 1;
+
+    }
+
+    .navs li {
+        flex: 2;
+
+
+    }
+
+    .navs a {
+        color: rgb(204, 58, 1);
+        text-decoration: none;
+
+    }
+
+    .navs a:hover {
+        color: #f5c8ac;
+    }
+
+    .navigations {
+        margin-top: 5px;
+        color: rgba(177, 50, 1, 0.76);
+        font-size: 20px;
+        font-weight: 100;
+        font-family: inherit;
+    }
+
+    .wrapper {
+
+        top: 50%;
+
+        width: 100%;
+        padding: 0 20px;
+
+    }
+
+    .contact-form {
+        display: flex;
+        max-width: 550px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.65);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .input-fields {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+    }
+
+    .input-fields,
+    .msg {
+        width: 48%;
+    }
+
+    .input-fields .input,
+    .msg textarea {
+        margin: 10px 0;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid rgba(190, 110, 79, 0.62);
+        padding: 10px;
+        color: rgba(190, 110, 79, 0.62);
+        width: 100%;
+    }
+
+    .msg textarea {
+        height: 212px;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(244, 232, 227, 0.79);
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(190, 110, 79, 0.62);
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba(190, 110, 79, 0.62);
+    }
+
+    .btn {
+        box-shadow: 0 0 10px rgba(177, 50, 1, 0.76), 0 0 20px rgba(177, 50, 1, 0.76), 0 0 60px rgba(177, 50, 1, 0.76);
+        text-align: center;
+        padding: 15px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .map{
+        height:500px;
+        width:60%;
+        margin-left:20px;
+        margin-top:50px;
+    }
+
+  .footer-sen {
+            height: 5px;
+            background-color: #0b0b0b;
+            margin-top: 100px;
+        }
+
+        footer img {
+            margin-left: 5%;
+
+        }
+
+
+
+        footer {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.92);
+            justify-content: space-between;
+
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .title {
+            font-size: 20px;
+            color: rgba(204, 58, 1, 0.42);
+
+        }
+
+        .items {
+            color: rgba(191, 120, 92, 0.42);
+        }
+
+        .footer-secondsen {
+            height: 35px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.92);
+            color: rgba(157, 110, 91, 0.86);
+          
+
+        }
+
+        .footer-secondsen p {
+            padding: 5px;
+        }
+
+        .footer-third {
+            height: 2px;
+            background-color: black;
+        }
+
+        .foott li {
+            padding: 3px;
+        }
+
+        .right {
+            margin-right: 10%;
+        }
+
+        .right li {
+            padding: 3px;
+        }
+
+        .downside {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.92);
+
+        }
+
+        .downside a {
+            color: rgba(204, 58, 1, 0.42);
+            font-size: 30px;
+            margin-left: 15%;
+            margin-bottom: 20px
+        }
+
+        .downside a:hover {
+            color: antiquewhite;
+        }
+    
+    
+
+</style></html>
