@@ -1,0 +1,131 @@
+html{
+    background:#ead5ba;
+}
+header {
+    
+    padding: 10px 10% 0;
+    text-align: center;
+    display: block;
+}
+h1 {
+    color: #d3b387;
+    font-size: 48px;
+    margin: 15px;
+    font-size: 5.0em;
+margin-top: 25%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'AvenirNextLTPro-Regular', Helvetica, Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+h2 {
+    text-align: center;
+    color: #a37a41;
+    font-size: 2.4em;
+    font-family: 'AvenirNextLTPro-UltLt', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+html {
+    background: ransparent   url(https://cdn.shopify.com/s/files/1/0976/2824/products/kettle-01cryingdove_grande.jpg?v=1560023070) top left repeat;
+ 
+}
+article {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.col-left {
+　　　font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 16px;
+    line-height: 16px;
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    
+   }
+
+.col {
+border-bottom-color: rgb(0, 0, 0);
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 16px;
+    line-height: 16px;
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+   
+  }
+.copyright {
+   width:960px;
+    margin:0 auto;
+    font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+   
+    text-align:center;
+    
+}
+.more {
+    clear: both;
+    margin: 40px 0 0 0;
+    text-align: center;
+    line-height: 16px;
+}
+.sentence {
+    clear: both;
+    width:960px;
+     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding:40px
+}
+.finish{
+   clear: both;
+    width:960px;
+     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    padding:20px
+}
+footer{
+    text-align:center;
+    
+}
+h4{
+    padding:30px
+}
+.button{
+    
+    width:150px;
+    background-color: #f4e6d3;
+    margin:0 auto;
+    
+    }
+
+a:hover {
+ 
+color:#d6a66d;
+
+ 
+}
+.caption{
+    width:276px;
+    background-color:#f4e6d3;
+    text-align:center;
+}
+
+a{
+    
+    text-decoration: none;
+}
+.ss-icon{
+    color: #006b92;
+    font-family: "SSSocialCircle";
+    
+}
+
+

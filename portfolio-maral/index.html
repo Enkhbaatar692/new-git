@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fortfile</title>
+    <meta charset="UTF-8">
+   
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.pagetop').fadeIn(duration);
+                } else {
+                    jQuery('.pagetop').fadeOut(duration);
+                }
+            });
+
+            jQuery('.pagetop').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({
+                    scrollTop: 0
+                }, duration);
+                return false;
+            })
+        });
+    </script>
+    
+</head>
+
+<body>
+    <header>
+       
+        <nav>
+            <ul class="navs">
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    
+
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 100;
+                var duration = 500;
+                jQuery(window).scroll(function() {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.pagetop').fadeIn(duration);
+                    } else {
+                        jQuery('.pagetop').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.pagetop').click(function(event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({
+                        scrollTop: 0
+                    }, duration);
+                    return false;
+                })
+            });
+        </script>
+
+
+    </header>
+
+
+    <main>
+        <article>
+            <section class="head">
+                <section class="head-1">
+                    <img class="logo" src="img/maral.gif" width="50%">
+
+                    <h1>Hello! I'm Enkhbaatar Maral.</h1>
+                    <ul class="head-in">
+                        <li>I am 21 years old.</li>
+                        <li>I haven't so many experiences but i really love the design work.</li>
+                        <li>I make my own awesome designs and projects.</li>
+                        <li>Follow me and send me some evolutions.</li>
+                    </ul>
+
+                </section>
+
+                <section class="head-2">
+                    <img class="my-photo" src="img/mine.JPG" width="60%">
+                </section>
+            </section>
+
+        </article>
+        <article class="items">
+            <a href="illustrate.html"><img class="left" src="img/ill.png" width="70%"></a>
+
+            <a href="design.html"><img class="right" src="img/des.png" width="70%"></a>
+            <a href="websites.html"><img class="left" src="img/wbsites.png" width="70%"></a>
+
+            <a href="designworks.html"><img class="right" src="img/dsworks.png" width="70%"></a>
+        </article>
+    </main>
+    <footer>
+        <div class="sen"></div>
+        <img class="logo-2" src="img/maral.gif" width="100px">
+        <ul>
+            <li>Thanks for joing my portfolio</li>
+            <li>If you want to connect me,you can use my social accounts.</li>
+        </ul>
+<div class="social">
+        <a href=""><i class="fab fa-facebook-square" width="30px" height="30px"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-pinterest-square"></i></a>
+    </div>
+        <nav class="sendfooter"><a href="contact.html">send me an email</a></nav>
+        <div class="sen-2"></div>
+        <p>2019 Maral.All rights reserved</p>
+    </footer>
+
+
+    <div class="pagetop">↑</div>
+
+</body></html>
